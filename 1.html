@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style class="css">
+a {
+  text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.clear:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.header { height: 100px; }
+.header-top {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid rgba(218, 218, 218, 1);
+}
+.header-info {
+    float: right;
+}
+.header-info li {
+    margin-left: 27px;
+    float: left;
+}
+.header-info a {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 1);
+}
+.iphone {
+    padding-left: 17px;
+    background: url(../images/iphone.png) no-repeat left center;
+}
+.weixin {
+    padding-left: 24px;
+    background: url(../images/weixin.png) no-repeat left center;
+}
+.header-bottom {
+    height: 100px;
+}
+.logo {
+    /*margin-top:14px;*/
+    padding-top: 30px;
+    float: left;
+}
+.nav {
+    float: left;
+    margin-top: 38px;
+    cursor:pointer;
+}
+.nav>li ul{ display:none; }
+.nav li:hover { background:rgba(13,166,146,0.1);}
+.nav>li:hover ul{ display:block; }
+.nav li {
+    float: left;
+    width: 122px;
+    text-align: center;
+    border-right: 1px solid black;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+.nav a { color: rgba(0, 0, 0, 1); }
+.form {
+    float: right;
+    margin-top: 34px;
+}
+.search {
+    float: left;
+    width: 145px;
+    padding: 9px;
+    border: 1px solid rgba(13, 166, 246, 1);
+}
+.submit {
+    float: left;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(13, 166, 246, 1);
+    background: rgba(13, 166, 246, 1) url(img/搜索.png) no-repeat center center;
+}
+.banner {
+    height: 350px;
+    position: relative;
+}
+
+.banner li {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.banner-one { background: url(img/banner2.png) no-repeat center center; }
+.banner-two { background: url(img/banner1.png) no-repeat center center; }
+.text {
+    position: absolute;
+    top: 47px;
+    right: 7.5%;
+}
+.prev,.next {
+    width: 70px;
+    height:90px;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+    background-color: rgba(0,0,0,0.1);
+}
+.next {
+    left: auto;
+    right: 8%;
+}
+.m{
+    font-size:20px;
+    font-style:blue,'楷体' ；
+    font-weight:1.5em;
+}
+.product-big{
+    height: 300px;
+    border: 1px solid blue;
+    background-color:rgba(13,166,146,0.1);
+}
+.product-item .f{
+    float: right;
+    padding-left: 0px;
+    padding-right:20px;
+}
+.product-item .first{
+    float: left;
+    padding-left:20px；
+} 
+ .size{
+          height:125px;
+          background:rgba(0,0,0,0.4);
+          position:absolute;
+          color:#fff;
+          font-size:18px;
+          line-height:47px;
+          text-indent:38px;
+ }
+.f1f2f3f4f5{
+   font-size:26px;
+ }
+.f1{ width:220px;top:700px;right:29px ; }
+.f2{ width:220px;top:700px;right:268px;}
+.f3{ width:220px;top:700px;right:508px;}
+.f4{ width:220px;top:700px;right:748px;}
+.f5{ width:220px;top:700px;right:994px;}  
+.s1s2s3s4s5{
+   font-size:26px;
+ }
+.s1{ width:220px;top:1070px;right:29px ; }
+.s2{ width:220px;top:1070px;right:268px;}
+.s3{ width:220px;top:1070px;right:508px;}
+.s4{ width:220px;top:1070px;right:748px;}
+.s5{ width:220px;top:1070px;right:994px;}  
+.t1t2t3t4t5{
+   font-size:26px;
+ }
+.t1{ width:220px;top:1435px;right:29px ; }
+.t2{ width:220px;top:1435px;right:268px;}
+.t3{ width:220px;top:1435px;right:508px;}
+.t4{ width:220px;top:1435px;right:748px;}
+.t5{ width:220px;top:1435px;right:994px;}  
+.end{
+    background-color: black;
+    padding:20px;
+    text-align:center;
+    color:red;
+}
+ </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+       <div class="container clear">
+           <ul class="header-info clear">
+               <li><a href="#">登陆/注册</a></li>
+               <li class="iphone"><a href="#">移动客户端</a></li>
+               <li class="weixin"><a href="#">微信</a></li>
+           </ul>
+       </div>
+    </div>
+    <div class="container clear">
+                <img src="img/logo.png" alt="logo图" class="logo" />
+                <ul class="nav clear">
+                    <li class="first"><a href="#">首页</a></li>
+                    <li><a href="#">热门</a></li>
+                    <li><a href="#">门票</a></li>
+                    <li><a href="#">攻略</a>
+                       <ul>
+                          <li>网红攻略</li>
+                          <li>经典攻略</li>
+                       </ul>
+                    </li>
+                </ul>
+                <form class="form clear">
+                    <input type="text" placeholder="请输入关键字" class="search" />
+                    <input type="button" class="submit" />
+                </form>
+        </div>
+    </div>
+    <div class="banner">
+        <ul>
+            <li class="banner-one"></li>
+            <li class="banner-two">
+                <img src="img/奇妙之旅.png" alt="" class='text'>
+            </li>
+        </ul>
+        <img src="img/banner2.png" alt="上一页" class="prev" />
+        <img src="img/banner1.png" alt="下一页" class="next" />
+    </div>
+    <p class="m">热门</p>
+    <div class="container1">
+        <ul class="product-big">
+            <li class="product-item">
+                <img class="first" src="img/三亚.png" alt="" width="220" height="220" />
+                <img class="f" src="img/重庆.png" alt="" width="220" height="220" />
+                <img class="f" src="img/成都.png" alt="" width="220" height="220" />
+                <img class="f" src="img/大理.png" alt="" width="220" height="220" />
+                <img class="f" src="img/西藏.png" alt="" width="220" height="220" />
+            </li> 
+        </ul>
+        <span class="size f1"><h3>三亚</h3><p>100¥起</p></span>
+        <span class="size f2"><h3>重庆</h3><p>100¥起</p></span>
+        <span class="size f3"><h3>成都</h3><p>100¥起</p></span>
+        <span class="size f4"><h3>大理</h3><p>100¥起</p></span>
+        <span class="size f5"><h3>西藏</h3><p>100¥起</p></span>
+    </div>
+    <p class="m">门票</p>    
+    <div class="container two">
+        <ul class="product-big">
+            <li class="product-item">
+                <img class="first" src="img/东方明珠.png" alt="" width="220" height="220" />
+                <img class="f" src="img/动物园.png" alt="" width="220" height="220" />
+                <img class="f" src="img/故宫.png" alt="" width="220" height="220" />
+                <img class="f" src="img/古寨.png" alt="" width="220" height="220" />
+                <img class="f" src="img/植物园.png" alt="" width="220" height="220" />
+            </li>
+        </ul>
+        <span class="size s1"><h3>东方明珠</h3><p>80¥起</p></span>
+        <span class="size s2"><h3>动物园</h3><p>120¥起</p></span>
+        <span class="size s3"><h3>故宫</h3><p>100¥起</p></span>
+        <span class="size s4"><h3>古寨</h3><p>100¥起</p></span>
+        <span class="size s5"><h3>植物园</h3><p>100¥起</p></span>
+    </div>
+    <p class="m">攻略</p>    
+    <div class="container three">
+        <ul class="product-big">
+            <li class="product-item">
+                <img class="first" src="img/三亚.png" alt="" width="220" height="220" />
+                <img class="f" src="img/缅甸.png" alt="" width="220" height="220" />
+                <img class="f" src="img/圣托里尼.png" alt="" width="220" height="220" />
+                <img class="f" src="img/柏林.png" alt="" width="220" height="220" />
+                <img class="f" src="img/清迈.png" alt="" width="220" height="220" />
+            </li>
+        </ul>
+        <span class="size t1"><h3>三亚防坑指南</h3><p>80¥起</p></span>
+        <span class="size t2"><h3>相约缅甸</h3><p>120¥起</p></span>
+        <span class="size t3"><h3>蓝白世界</h3><p>100¥起</p></span>
+        <span class="size t4"><h3>柏林之约</h3><p>100¥起</p></span>
+        <span class="size t5"><h3>泰北圣地</h3><p>100¥起</p></span>
+    </div>
+    <div class="end">
+     <p>版权所有、盗版必究</p>
+    </div>
+</body>
+</html>
